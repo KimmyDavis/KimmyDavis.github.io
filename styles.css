@@ -16,6 +16,7 @@
 body {
   background-color: black;
   overflow-x: hidden;
+  width: 100vw;
 }
 header nav {
   position: relative;
@@ -170,20 +171,19 @@ header button {
   font-weight: 500;
   font-size: 3em;
 }
+.section.subscribe p {
+  font-weight: 200;
+  font-size: 1.5em;
+}
 .section.subscribe form {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-}
-.section.subscribe p {
-  font-weight: 200;
-  font-size: 1.5em;
+  width: 100%;
 }
 .section.subscribe input {
-  max-width: 500px;
-  min-width: max-content;
-  width: 25%;
+  width: MIN(400px, 80vw);
   background-color: var(--faint-white);
   padding: 10px 20px;
   border: none;
